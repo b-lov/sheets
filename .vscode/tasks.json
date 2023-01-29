@@ -6,7 +6,7 @@
     {
       "label": "compile current file",
       "type": "shell",
-      "command": "lilypond ${file}",
+      "command": "cd ${fileDirname} && lilypond ${file}",
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -16,7 +16,7 @@
     {
       "label": "watch file for changes and reload",
       "type": "shell",
-      "command": "fswatch -o ${workspaceFolder}/${fileBasenameNoExtension}.pdf | xargs -n1 -I {} osascript -e 'tell application \"Microsoft Edge\" to repeat with W in windows' -e 'reload (every tab in W whose URL contains \"${fileBasenameNoExtension}\")' -e 'end repeat'"
+      "command": "fswatch -o ${workspaceFolder}/${fileBasenameNoExtension}.pdf | xargs -n1 -I {} osascript -e 'tell application \"Arc\" to repeat with W in windows' -e 'reload (every tab in W whose URL contains \"${fileBasenameNoExtension}\")' -e 'end repeat'"
     }
   ]
 }
