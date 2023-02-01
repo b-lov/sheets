@@ -11,10 +11,10 @@
 
 \header {
   title = \markup {
-    \override #'(font-family . sans) "Etüde Op. 10 No. 1 C-Dur"
+    \override #'(font-family . sans) "etude op10 no1 - chords"
   }
   composer = \markup {
-    \override #'(font-family . sans) "F. Chopin"
+    \override #'(font-family . sans) "chopin"
   }
   tagline = ##f
 }
