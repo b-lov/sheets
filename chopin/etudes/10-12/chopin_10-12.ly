@@ -55,11 +55,11 @@ upII = \relative c {
   r2 r8 r16 <c'' c'>[ <d d'>8. <es es'>16] |
   <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] |
   <as c es as>2~ <g c es g>8 r16 <c c'>[ <d d'>8. <es es'>16] | \break
-  % up 13-16
-  <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] |
-  <a c es a~>1 | <d a' d>8 r8 <g, d' g>4 r8 r16 <g des' g>16[ <as! des as'>8. <g des' g>16] |
+  % up 13-14
+  <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] | <a c es a~>1 |
+  % up 15-18
+  <d a' d>8 r8 <g, d' g>4 r8 r16 <g des' g>16[ <as! des as'>8. <g des' g>16] |
   <g c g'>8 <c c'> 16 r <f, c' f>4 r8 r16 <f c' f>16[ <g c g'>8. <f c' f>16] | \break
-  % up 17-18
   \stemDown <e c' e>2.~8. <es es'>16 | <<b'2 \\ {<es, es'>4 <d d'>} >> r2 |
 }
 downII = \relative c, \magnifyMusic 0.75 {
@@ -68,14 +68,36 @@ downII = \relative c, \magnifyMusic 0.75 {
   c, g' c d es d c g c, g' c d es d c g |
   c, g' c d es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
-  % down 13-16
+  % down 13-14
   c, g' c d es g c d es d c g es d c g |
   c, fis c' d es d c g c, fis c' d es d c g |
+  % down 15-18
   b, b' d g d' g, d b bes, bes' des g des' g, des bes |
   a, a' d f c' f, c a as, as' c f c' f, c as |
-  % down 17-18
   g, g' c b des c d cis es d e dis f e ges f |
   g! fis as g bes! as g f es d c b as g f d | 
+}
+
+% 19-28
+upIII = \relative c {
+  % up 19-22
+  r1 | r2 r8 r16 <c'' c'>[ <d d'>8. <es es'>16] | \break
+  <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] |
+  <as c es as>2~ <g c es g>8 r16 <c c'>[ <d d'>8. <es es'>16] |
+  % up 23-24
+  <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] | <a es' f a~>1 | \break
+  % up 25-28
+}
+downIII = \relative c, \magnifyMusic 0.75 {
+  % down 19-22
+  c16 g' c d es g c d es d c g es d c g |
+  c, g' c d es d c g c, g' c d es d c g |
+  c, g' c d es g c d es d c g es d c g |
+  c, g' c d es d c g c, g' c d es d c g |
+  % down 23-24
+  c, g' c d es g c d es d c g es d c g |
+  c, f c' d es d c g c, f c' d es d c g |
+  % down 25-28
 }
 
 
@@ -86,6 +108,7 @@ downII = \relative c, \magnifyMusic 0.75 {
       {
         \upI % 1-8
         \upII % 9-18
+        \upIII % 19-28
       }
     }
     \new Staff = "down" {
@@ -93,6 +116,7 @@ downII = \relative c, \magnifyMusic 0.75 {
       {
         \downI % 1-8
         \downII % 9-18
+        \downIII % 19-28
       }
     }
   >>
