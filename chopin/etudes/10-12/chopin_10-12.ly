@@ -64,7 +64,7 @@ upII = \relative c {
 }
 downII = \relative c, \magnifyMusic 0.75 {
   % down 9-12
-  c16 g' c d es g c d es d c g es d c g |
+  c16 g' c d \stemNeutral es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
   c, g' c d es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
@@ -87,6 +87,10 @@ upIII = \relative c {
   % up 23-24
   <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] | <a es' f a~>1 | \break
   % up 25-28
+  <bes f' bes>4. <bes f' bes>4 <bes g' bes> <b g' b>8~8 |
+  <c g' bes c>4 <cis b' cis> <d bes' d>8 <es b' es> <e b' e> |
+  <f bes d f>2 <d f bes d>4 <<{d'8. c16} \\ es,4 f a>> |
+  <d, f bes>8 r r4 r2 | \break
 }
 downIII = \relative c, \magnifyMusic 0.75 {
   % down 19-22
@@ -98,8 +102,11 @@ downIII = \relative c, \magnifyMusic 0.75 {
   c, g' c d es g c d es d c g es d c g |
   c, f c' d es d c g c, f c' d es d c g |
   % down 25-28
+  d bes' ces bes bes' bes, ces bes es, bes' ces bes bes' bes, ces bes |
+  e, bes' c! bes bes' bes, c! bes f bes bes' bes, ges bes bes' bes, |
+  f bes d f bes d g f f d bes g f es c f, |
+  bes, des'[ c ces] bes c ces bes a ces bes a gis bes a gis |
 }
-
 
 \score {
   \new PianoStaff << 
