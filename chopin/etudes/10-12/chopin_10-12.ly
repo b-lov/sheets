@@ -50,12 +50,11 @@ downI = \relative c' \magnifyMusic 0.75 {
 
 % 9-18
 upII = \relative c { 
-  % up 9-12
+  % up 9-14
   c8 \change Staff = "up" \stemNeutral r8 r4 r2 |
   r2 r8 r16 <c'' c'>[ <d d'>8. <es es'>16] |
   <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] |
   <as c es as>2~ <g c es g>8 r16 <c c'>[ <d d'>8. <es es'>16] | \break
-  % up 13-14
   <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] | <a c es a~>1 |
   % up 15-18
   <d a' d>8 r8 <g, d' g>4 r8 r16 <g des' g>16[ <as! des as'>8. <g des' g>16] |
@@ -63,12 +62,11 @@ upII = \relative c {
   \stemDown <e c' e>2.~8. <es es'>16 | <<b'2 \\ {<es, es'>4 <d d'>} >> r2 |
 }
 downII = \relative c, \magnifyMusic 0.75 {
-  % down 9-12
+  % down 9-14
   c16 g' c d \stemNeutral es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
   c, g' c d es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
-  % down 13-14
   c, g' c d es g c d es d c g es d c g |
   c, fis c' d es d c g c, fis c' d es d c g |
   % down 15-18
@@ -80,11 +78,10 @@ downII = \relative c, \magnifyMusic 0.75 {
 
 % 19-28
 upIII = \relative c {
-  % up 19-22
+  % up 19-24
   r1 | r2 r8 r16 <c'' c'>[ <d d'>8. <es es'>16] | \break
   <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] |
   <as c es as>2~ <g c es g>8 r16 <c c'>[ <d d'>8. <es es'>16] |
-  % up 23-24
   <es es'>2 r8 r16 <g, c es g>16[ <g c es g>8. <g c es g>16] | <a es' f a~>1 | \break
   % up 25-28
   <bes f' bes>4. <bes f' bes>4 <bes g' bes> <b g' b>8~8 |
@@ -93,12 +90,11 @@ upIII = \relative c {
   <d, f bes>8 r r4 r2 | \break
 }
 downIII = \relative c, \magnifyMusic 0.75 {
-  % down 19-22
+  % down 19-24
   c16 g' c d es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
   c, g' c d es g c d es d c g es d c g |
   c, g' c d es d c g c, g' c d es d c g |
-  % down 23-24
   c, g' c d es g c d es d c g es d c g |
   c, f c' d es d c g c, f c' d es d c g |
   % down 25-28
