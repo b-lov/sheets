@@ -6,7 +6,7 @@
     {
       "label": "compile current file",
       "type": "shell",
-      "command": "cd ${fileDirname} && lilypond ${file}",
+      "command": "cd ${fileDirname} && lilypond *.ly",
       "problemMatcher": [],
       "group": {
         "kind": "build",
