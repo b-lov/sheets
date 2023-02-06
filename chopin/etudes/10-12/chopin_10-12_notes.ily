@@ -219,21 +219,29 @@ downVIII = \relative c, \magnifyMusic 0.75 {
 % 73-84
 upIX = \relative c' {
   <es c'>1~ | 1 | << {c'4. b8 d4} \\ {<d, f>2.} >> r4 | r1 | % 73-76
-  \break
   << {c'1~} \\ {c,8 r r4 r2} >> | % 77
   << {c'2 d!} \\ {<f, as>1} >> | % 78
   <e g e'>1 | % 79
   << {c'2. d4} \\ {c,2~4 b'} \\ {as1} \\ {g2 f} >> | % 80
-  \break
   <e g c e>8 \magnifyMusic 0.75 {
     as''16[ g] e c des c bes! g as g e c des c | % 81
     bes g as g e c des c \change Staff = "down"
     \stemUp bes g as g e c des c | % 82
   }
   <c f a c>2 <c f as c> | <c f g c>4 <c e g c> r2 | % 83-84
+  \change Staff = "up" \fine
 }
-downIX = \relative c, {
-  s1 s1 s1 s1
-  s1 s1 s1 s1
-  s1 s1 s1 s1 
+downIX = \relative c,, \magnifyMusic 0.75 {
+  e8 e'16[ dis] f e ges f g fis as g a gis bes a | % 73
+  ces bes c b des c d cis es d e dis f e ges f | % 74
+  g! fis as g bes as g f es d f es g f es d | % 75
+  c b d c b as g fis g as f g es f d es | % 76
+  c8 des''16[ c] bes! g as g e c des c bes g as g | % 77
+  f c f c f c f c f c f c f c f c | % 78
+  c8 des''16[ c] bes g as g e c des c bes g as g | % 77
+  f c f c f c f c f c f c f c f c | % 78
+  c'8 \clef treble as'''16[ g] e c des c bes! g as g e c des c | % 81
+  \clef bass \stemDown bes g as g e c des c bes g as g e c des c | % 82
+  \normalsize <f, f'>2 2 | <c c'>4 4 r2 | % 83-84
+  \fine
 }
