@@ -21,9 +21,11 @@ KEYTIME = { \key c \minor \time 4/4 }
 
 up = {
   \upI % 1-8
+  \upII % 1-8
 }
 down = {
   \downI % 1-8
+  \downII % 1-8
 }
 
 \score {
