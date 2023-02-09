@@ -1,5 +1,6 @@
 \version "2.24.0"
 \include "chopin_25-01_notes.ily"
+\pointAndClickOff
 
 #(set-global-staff-size 16)
 
@@ -12,7 +13,7 @@
 \markup { \vspace #1 }
 
 \header {
-  title = \markup { \override #'(font-family . sans) "etude op25 no1" }
+  title = \markup { \override #'(font-family . sans) "etude 25/1" }
   composer = \markup { \override #'(font-family . sans) "chopin" }
   tagline = ##f
 }

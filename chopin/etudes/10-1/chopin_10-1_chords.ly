@@ -1,5 +1,6 @@
 % ragged-last-bottom = ##f
 \version "2.24.0"
+\pointAndClickOff
 #(set-global-staff-size 16)
 
 \paper {
@@ -11,7 +12,7 @@
 
 \header {
   title = \markup {
-    \override #'(font-family . sans) "etude op10 no1 - chords"
+    \override #'(font-family . sans) "etude 10/1"
   }
   composer = \markup {
     \override #'(font-family . sans) "chopin"
