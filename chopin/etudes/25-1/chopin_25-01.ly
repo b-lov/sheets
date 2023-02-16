@@ -1,7 +1,9 @@
 \version "2.24.0"
 \include "chopin_25-01_notes.ily"
+% no links on pdf
 \pointAndClickOff
 
+% smaller staff
 #(set-global-staff-size 16)
 
 \paper {
@@ -13,8 +15,9 @@
 \markup { \vspace #1 }
 
 \header {
-  title = \markup { \override #'(font-family . sans) "etude 25/1" }
+  title = \markup { \override #'(font-family . sans) "25/1" }
   composer = \markup { \override #'(font-family . sans) "chopin" }
+  % remove bottom text
   tagline = ##f
 }
 
@@ -48,6 +51,9 @@ down = {
 \score {
   % \set Score.extraNatural = ##f
   \new PianoStaff << 
+    \override Score.BarNumber.X-offset = 1
+    \override Score.BarNumber.Y-offset = -5.6
+    \override Score.BarNumber.font-family = #'sans
     \new Staff = "up" { \clef treble \KEYTIME \up }
     \new Staff = "down" { \clef bass \KEYTIME \down }
   >>

@@ -15,7 +15,7 @@
 \markup { \vspace #1 }
 
 \header {
-  title = \markup { \override #'(font-family . sans) "etude 10/1" }
+  title = \markup { \override #'(font-family . sans) "10/1" }
   composer = \markup { \override #'(font-family . sans) "chopin" }
   % remove bottom text
   tagline = ##f
@@ -24,20 +24,18 @@
 KEYTIME = { \key c \major \time 4/4 }
 
 up = {
-  \upI % 1-14
-  \upII % 15-30
-  \upIII % 31-46
-  \upIV % 47-54
-  \upV % 55-70
+  \upI % 1-16
+  \upII % 17-36
+  \upIII % 37-48
+  \upIV % 49-68
+  \upV % 69-79
 }
 down = {
-  \downI
-  % \downI % 1-14
-  % \downII % 15-30
-  % \downIII % 31-46
-  % \downIV % 47-54
-  % \downV % 55-70
-  % \downVI % 71-83
+  \downI % 1-16
+  \downII % 17-36
+  \downIII % 37-48
+  \downIV % 49-68
+  \downV % 69-79
 }
 
 \score {
@@ -48,7 +46,6 @@ down = {
     \new Staff = "up" { \clef treble \KEYTIME \up }
     \new Staff = "down" { \clef bass \KEYTIME \down }
   >>
-
   \layout {
     indent = 0\mm
     \context {

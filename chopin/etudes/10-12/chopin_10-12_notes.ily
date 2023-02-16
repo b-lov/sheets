@@ -201,7 +201,7 @@ upVIII = \relative c'' {
   <bes des bes'>2 <as bes des as'>4 <ges bes des ges>8. <f bes des f>16 | % 65
   <f bes^~ des f>2( <e bes' e>4) r | % 66
   <as ces fes as>2 <ges as ces ges'>4 <fes as ces fes>8. <es as ces es>16 | % 67
-  <es as~ ces es>2( <des as' des>4) r | <g! es' g!>1 | % 68-69
+  <es as~ ces es>2( <d as' d>4) r | <g! es' g!>1 | % 68-69
   << {g'2~4. f8} \\ {g,2 2} \\ {d'1} >> | % 70
   << {f2 es} \\ g,1 c >> | % 71
   \once \set Score.connectArpeggios = ##t

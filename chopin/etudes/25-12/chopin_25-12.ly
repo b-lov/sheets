@@ -13,7 +13,7 @@
 \markup { \vspace #1 }
 
 \header {
-  title = \markup { \override #'(font-family . sans) "etude 25/12" }
+  title = \markup { \override #'(font-family . sans) "25/12" }
   composer = \markup { \override #'(font-family . sans) "chopin" }
   tagline = ##f
 }
